@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class EletronicosController {
 	
 	@RequestMapping (value= {"/eletronicos", "/"}, method = RequestMethod.GET)
-	public String helloWorld(Model model) {
-		model.addAttribute("");
-		return "eletronicos";
+	public String eletronicos(Model model) {
+		model.addAttribute("teste", "Teste do Controller");
+		return "teste";
 	}
 }
