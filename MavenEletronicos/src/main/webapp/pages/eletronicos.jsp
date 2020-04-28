@@ -25,10 +25,10 @@
 				<th>Nome</th>
 				<th>Tipo</th>
 			</tr>
-		<c:forEach items="${listaEletronicos}" var="itemList">
+		<c:forEach items="${eletronicos}" var="itemList">
 			<tr>
 				<td>${itemList.nome}</td>
-				<td>${itemList.getNome()}</td>
+				<td>${itemList.tipo}</td>
 			</tr>
 		</c:forEach>
 		</table>
